@@ -1,0 +1,11 @@
+image:
+  file: .gitpod.dockerfile
+
+ports:
+  - port: 6080
+    visibility: public
+    onOpen: open-browser
+
+tasks:
+  - name: setup
+    command: bash ./.res/.setup/.setup.sh
